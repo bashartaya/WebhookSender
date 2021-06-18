@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  list-style:none;
+  text-decoration: none!important;
+}
+
+body {
+  --newcolor: rgb(92, 92, 243);
+  --backgroundcolor:rgb(19, 19, 19);
+  background: var(--backgroundcolor);
+  overflow:hidden;
+}
+
+.App {
+  width:100%;
+  height: 100vh;
+  /* background: var(--newcolor); */
+}
+
+
+
+.nav h1 {
+  font-size:40px;
+  font-family:'Poppins',sans-serif;
+}
+.nav h1 a {
+  font-weight: normal;
+  color:white!important;
+}
+
+
+.nav {
+  height: 90px;
+  background: var(--newcolor);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom:solid 2px white
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width:100%;
+  height: 78vh;
+  background: var(--backgroundcolor);
+}
+
+.section form input {
+  display: block;
+  padding:7px;
+  margin-bottom: 30px;
+  margin-top: 5px;
+  border-radius:5px;
+  border:none;
+  outline:none;
+  background:rgb(42, 43, 46);
+  width:270px;
+  transition:all 0.3s ease;
+  color:white;
+  font-family:sans-serif;
+  font-weight: normal;
+}
+
+.section form input:active,.section form input:focus {
+  border:solid 2px var(--newcolor);
+}
+
+
+label {
+  color:white;
+  font-weight: normal;
+  font-family: 'Poppins',sans-serif;
+  font-size:15px;
+}
+
+.btn {
+  background: var(--newcolor);
+  border:var(--newcolor);
+  margin-top:0;
+}
+
+.btn:focus,.btn:hover {
+  background: var(--newcolor);
+}
+
+/* #error,#success {
+  display: none;
+} */
+
+
+.alert-success i {
+  color:red;
+  font-size:30px;
+}
+
+.alert-info {
+  background-color:rgb(42, 43, 46);
+  border:none;
+}
+
+.alert a {
+  color:white!important;
+  font-family: 'Poppins',sans-serif;
+}
+
+#error,#success {
+  display: none;
+}
+
+#error {
+  background-color: rgb(235, 19, 19);
+  height: 54px;
+}
+
+#success {
+  background-color: green;
+  height: 54px;
+}
+.section2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--backgroundcolor);
+  width:100%;
+  height: 50px;
+}
+
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+#copyright a , #copyright {
+  color:white!important;
+  line-height: 80px;
+  font-size: 13px;
+}
+
